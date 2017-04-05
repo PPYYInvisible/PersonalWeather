@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PersonalWeather</title>
+  <link href="personalWeather.css" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Josefin Sans" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <![endif]-->
 
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+	  $(".concept").click(function(){
+	    $("html, body").animate({scrollTop: $(".core").offset().top }, {duration: 500,easing: "swing"});
+		});
+	});
+	
+	$(document).ready(function(){
+	  $(".functions").click(function(){
+	    $("html, body").animate({scrollTop: $(".function").offset().top }, {duration: 500,easing: "swing"});
+		});
+	});
+	
+	$(document).ready(function(){
+	  $(".tech").click(function(){
+	    $("html, body").animate({scrollTop: $(".technology").offset().top }, {duration: 500,easing: "swing"});
+		});
+	});
+  </script>  
+</head>
+
+<body>
+  <div class="nav">
+    <svg class="line">
+	  <line x1="0" y1="2vh" x2="100%" y2="2vh" />
+	</svg>
+    <svg class="concept poly">
+	  <polygon points="0,20 10,0 20,20" />
+	</svg>
+	<svg class="functions poly">
+	  <polygon points="0,20 10,0 20,20" />
+	</svg>
+	<svg class="tech poly">
+	  <polygon points="0,20 10,0 20,20" />
+	</svg>
+  </div>
+  
+  <header>
+    <h2>PERSONAL WEATHER</h2>
+	<img class="logo" src="images/logo.svg" alt="logo">
+	<h6>FIND INTERESTING WEATHER</h6>
+  </header>
+  
+  <div class="core">
+    <img src="images/inspiration.png" alt="inspiration">
+	<h3>CORE CONCEPT</h3>
+	<p>According to the principle of value pyramid, generally I decide to use the weather information and user's interests to create a personal weather application, specifically this application has two parts, one part is about weather information, another part is the community of interests. The weather information intends to reduce risk and save time, while the community of interests intends to connect and classify users who have similar interests.</p>
+  </div>
+  
+  <div class="function">    
+	<img class="weatherImg" src="images/weatherPart.png" alt="weatherPart">
+	<h3 class="fct title">FUNCTIONS</h3>
+	<p class="weatherP">In the weather part, firstly, the top-left section shows basic temperature and weather information such as rainy, sunny or cloudy day.</p>
+	<p class="weatherP">Secondly, the top-right section shows the altering information which can be customized, so users are able to add and sort the meaningful weather information for themselves. For example, the enthusiasts of sailing maybe care about wind direction and UV exposure range.</p>
+	<p class="weatherP">Thirdly, the middle section shows the reminder information which relates to weather and user's interests. For instance, if a user likes cooking and the weather is rainy, then the function could remind the user what foods suit for rainy day.</p>
+	<p class="weatherP">Lastly, the bottom section recommends popular topics from the community of interests that are chosen by users. Additionally the popular index bases on the number of thumb of the topic. Besides, After users click topics, the page will jump to the page of topic.</p>
+	
+	<img class="interestImg1 interestImgs" src="images/interestPart1.png" alt="interest1">
+	<h3 class="interests title">INTERESTS</h3>
+	<p class="interestP">This is the community of interests, users are able to enter different communities by clicking icons. Additionally, at top-right corner the plus button allows users to customize new community of interests.</p>
+	
+	<img class="interestImg2 interestImgs" src="images/interestPart2.png" alt="interest2">
+	<h3 class="community title">COMMUNITY</h3>
+	<p class="interestP">After users click the icon of interest, users can enter this interface. For example, this is a community of food, users are able to browse relative topics, and at the right side, users can see the number of thumbs and comments, uers can give a thumb in this interface or click the icon of comment to browse all comments and publish their own comment. If users click the content of topic, they can enter the interface of the entire contents and comments. Additionally, the plus button at the top-right corner allows users to publish their own topics.</p>
+	<p class="interestP">For this interest function, I wish that users can share their experiences how weather affects their interests and lifes, it could be happy things or complaints, users can upload videos and photos to make interesting contents.</p>
+  </div>
+  
+  <div class="technology">
+    <img class="iconTech" src="images/tech.svg" alt="techIcon">
+    <h3>TECHNOLOGIES</h3>
+	<p class="techP">1. GPS or WiFi Geo Location: basic weather information, altering function and reminder function need GPS to locate user's location.</p>
+	<p class="techP">2. Small data and automated decision making: the reminder function needs to use weather data from BloomSky and user's interests label, then it automatically reminds personal suggestions.</p>
+	<p class="techP">3. Authentication and Social Media: the community of interest needs users to sign in their social accounts, such as facebook or google account, so users have identities to establish relationships.</p>	
+  </div>
+  
+
+</body>
+
+
+</html>
