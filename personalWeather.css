@@ -1,0 +1,203 @@
+body{
+	margin: 0;
+	font-family: "Josefin Sans", Verdana, sans-serif;
+}
+
+.nav{
+    display: flex;
+	justify-content: space-around;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+}
+
+
+.line{
+	width: 100%;
+	height: 4vh;
+	z-index: 9;
+	position: absolute;
+	stroke: #1f1f14;
+	stroke-width: 1px;
+	opacity: 0.5;
+	
+}
+
+.poly{
+	width: 20px;
+	height: 20px;
+	display: inline;
+	fill: #b3e6ff;
+	opacity: 0.8;
+	z-index: 10;
+	transition: fill 0.3s linear 0s; 
+}
+
+.poly:hover{
+	fill: #1f1f14;
+	cursor: pointer;
+}
+
+header{
+	display: block;
+	width: 100%;
+    background-color: #3399ff;
+}
+
+header h2{
+	width: 50%;
+	position: absolute;
+	margin-top: 10px;
+	border-bottom: 1px solid white;
+	color: white;
+	text-align: right;
+	font-size: 1em;
+	z-index: 0;
+	
+}
+
+
+.logo{
+	display: block;
+	width: 90%;
+	height: 100%;
+	margin: auto;
+}
+
+header h6{
+	width: 40%;
+	margin: 0 0 0 10px;
+	padding: 0 0 10px 10px;
+	border-left: 1px solid white;
+	color: white;
+	text-align: left;
+	font-size: 0.8em;
+	
+}
+
+.core{
+	display: block;
+	width: 100%;	
+	background: linear-gradient(rgba(204, 239, 255, 1), rgba(0, 128, 255,1)); /*Standard*/
+	background: -webkit-linear-gradient(rgba(204, 239, 255, 1),rgba(0, 128, 255,1)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(rgba(204, 239, 255, 1),rgba(0, 128, 255,1)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(204, 239, 255, 1),rgba(0, 128, 255,1)); /*Fx 3.6-15*/
+}
+
+.core img{
+	width: 100%;
+	margin: 0;
+}
+
+.core h3{
+	width: 50%;
+	text-align: center;
+	margin: 0 0 0 50%;
+	color: white;
+	background-color: #ff884d;
+	box-shadow: 3px 3px 5px grey;
+    font-size: 1.2em;	
+}
+
+.core p{
+	margin: 10px 10px 0 10px;
+	color: white;
+	text-indent: 50px;
+	text-align: justify;
+	letter-spacing: 1px;
+	font-size: 1.1em;
+}
+
+.function{
+	display: block;
+	width: 100%;
+}
+
+.title{
+	width: 50%;
+	text-align: center;	
+	color: white;
+	background-color: #333333;
+	box-shadow: 3px 3px 5px grey;
+    font-size: 1.2em;	
+}
+
+.fct{
+	margin: 10px 0;
+}
+
+.interests{
+	margin: 10px 0 10px 50%;
+}
+
+.community{
+	margin: 10px 0 10px 50%;
+}
+
+.weatherImg{
+	width: 100%;
+	margin: 0;
+}
+
+.weatherP{
+	margin: 0;
+	padding: 10px;
+	color: black;
+	text-indent: 50px;
+	text-align: justify;
+	letter-spacing: 1px;
+	font-size: 1.1em;
+	border-bottom: 2px solid white;
+	background-color: #f2f2f2;
+}
+
+.interestImgs{
+	width: 100%;
+	margin: 0;
+}
+
+.interestP{
+	margin: 0;
+	padding: 10px;
+	color: black;
+	text-indent: 50px;
+	text-align: justify;
+	letter-spacing: 1px;
+	font-size: 1.1em;
+	border-bottom: 2px solid white;
+	background-color: #f2f2f2;
+}
+
+.technology{
+	display: block;
+	width: 100%;
+	background-color: #3399ff;
+}
+
+.iconTech{
+	display: block;
+	width: 20%;
+	margin: auto;
+	
+}
+
+.technology h3{
+	width: 100%;
+	text-align: center;
+	padding: 5px 0;
+	margin: 0;
+	color: white;
+	background-color: #ff884d;
+	box-shadow: 3px 3px 5px grey;
+    font-size: 1.2em;	
+}
+
+.techP{
+	margin: 0;
+	padding: 10px;
+	color: white;
+	text-indent: 50px;
+	text-align: justify;
+	letter-spacing: 1px;
+	font-size: 1.1em;
+}
